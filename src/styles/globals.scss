@@ -2,7 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Поддержка базового пути для GitHub Pages */
+:root {
+  --base-path: '/repository-name'; /* Замените 'repository-name' на имя вашего репозитория */
+}
+
+/* Общие стили */
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+}
+
+/* Фоновые изображения с использованием base-path */
+.bg-mountains-image {
+  background-image: url("/assets/mountains.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.bg-planets-image {
+  background-image: url("/assets/planets.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-sun-image {
+  background-image: url("/assets/sun.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-stars-image {
+  background-image: url("/assets/stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
